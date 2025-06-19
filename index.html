@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <title>Tracey Nduta </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Sidebar Social Links -->
+  <aside class="socials">
+    <a href="https://github.com/KimemiaT" target="_blank"><img src="images/git.jpg" width="30px" alt="GitHub"></a>
+    <a href="https://www.linkedin.com/in/tracey-nduta/" target="_blank"><img src="images/linkedin.png" width="30px" alt="LinkedIn"></a>
+    <div class="line"></div>
+    <a href="https://medium.com/@TeeTech" target="_blank"><img src="images/medium.png" width="30px" alt="Medium"></a>
+  </aside>
+
+  <!-- Navigation Bar -->
+  <header class="nav">
+    <div class="logo"><img src="images/logo.png" width="40px" alt="Logo"></div>
+    <nav>
+      <a href="index.html" target="_blank">About</a>
+      <a href="projects.html" target="_blank">Projects</a>
+      <a href="timeline.html" target="_blank">Timeline</a>
+      <a href="experience.html" target="_blank">Experience</a>
+      <a href="contact.html" target="_blank">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Hi there! I'm <span class="green">Tracey Nduta</span>.</h1>
+      <h2>A <span class="green">SDET Engineer, Business Analyst, Data Analyst</span> with a passion for quality and insights.</h2>
+      <p>I specialize in transforming complex datasets into actionable insights and ensuring software reliability through meticulous testing. Certified in both Software Quality Assurance (CTFL) and Business Analysis (CBAP), I bridge the gap between data and business value.</p>
+      <div class="hero-buttons">
+        <a href="timeline.html" class="cta-btn">View My Journey →</a>
+        <a href="mailto:traceynduta70@gmail.com" class="cta-btn secondary">Get In Touch ✉️</a>
+      </div>
+    </div>
+
+    <div class="hero-illustration">
+      <!-- Animated Tech Sphere -->
+      <div class="tech-sphere">
+        <div class="orbit orbit-1"></div>
+        <div class="orbit orbit-2"></div>
+        <div class="orbit orbit-3"></div>
+        <div class="core"></div>
+        <div class="particle particle-1"></div>
+        <div class="particle particle-2"></div>
+        <div class="particle particle-3"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <p>Designed and created by <span class="green">Tracey Nduta</span> © <span id="year"></span></p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
