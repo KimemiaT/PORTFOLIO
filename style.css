@@ -161,7 +161,7 @@ body {
 }
 /* Tech Sphere Animation */
 .tech-sphere {
-  position: absolute;
+  position: relative;
   width: 380px;
   height: 380px;
   top: 50%;
